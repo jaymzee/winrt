@@ -1,4 +1,10 @@
-# compiling samples
+# compiling samples with MSVC
+* c++17
+* standard exception handling
+* standards conforming
+* disable two-phase name lookup (nonconforming)
+* enable warnings
+
 ```
-cl /O2 /EHsc /std:c++17 /permissive- /Zc:twoPhase- /W4 filename.cpp
+$ cl /std:c++17 /EHsc /permissive- /Zc:twoPhase- /W4 filename.cpp
 ```
